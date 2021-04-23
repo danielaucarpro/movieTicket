@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Student Project">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>CICCC - Pick a Movie - Daniel Aucar Felipe</title>
+    <!-- REFS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/favicon_w.png" />
+</head>
+
+<body>
+    <div id="choose-movie">
+        <div id="choose-text">
+            <span class="movie-text">Choose a movie:</span>
+            <select id="movie">
+                <option value="10">Finding Nemo ($10)</option>
+                <option value="12">Joker ($12)</option>
+                <option value="8">Spirited Away ($8)</option>
+                <option value="18">Howl's Moving Castle ($18)</option>
+            </select>
+        </div>
+    </div>
+    <ul id="legend">
+        <li>
+            <div class="seat"></div>
+            <span class="text-legend">Available</span>
+        </li>
+        <li>
+            <div class="seat-selected"></div>
+            <span class="text-legend">Selected</span>
+        </li>
+        <li>
+            <div class="seat-occupied"></div>
+            <span class="text-legend">Occupied</span>
+        </li>
+    </ul>
+    <div id="container">
+        <div class="screen">Screen</div>
+        <!-- A -->
+        <div class="row">
+            <p class="row-letter">A</p>
+            <div id="row-seat" class="seat">1</div>
+            <div id="row-seat" class="seat">2</div>
+            <div id="row-seat" class="seat">3</div>
+            <div id="row-seat" class="seat">4</div>
+            <div id="row-seat" class="seat">5</div>
+            <div id="row-seat" class="seat">6</div>
+            <div id="row-seat" class="seat">7</div>
+            <div id="row-seat" class="seat">8</div>
+        </div>
+        <!-- B -->
+        <div class="row">
+            <p class="row-letter">B</p>
+            <div id="row-seat" class="seat">1</div>
+            <div id="row-seat" class="seat">2</div>
+            <div id="row-seat" class="seat">3</div>
+            <div id="row-seat" class="seat">4</div>
+            <div id="row-seat" class="seat">5</div>
+            <div id="row-seat" class="seat">6</div>
+            <div id="row-seat" class="seat">7</div>
+            <div id="row-seat" class="seat">8</div>
+        </div>
+        <!-- C -->
+        <div class="row">
+            <p id="priority-row">C</p>
+            <div id="row-seat" class="seat-occupied">1</div>
+            <div id="row-seat" class="seat-occupied">2</div>
+            <div id="row-seat" class="seat">3</div>
+            <div id="row-seat" class="seat">4</div>
+            <div id="row-seat" class="seat">5</div>
+            <div id="row-seat" class="seat">6</div>
+            <div id="row-seat" class="seat">7</div>
+            <div id="row-seat" class="seat">8</div>
+            <img class="priority-icon" src="./img/pSeat.jpg.png" alt="" srcset="">
+        </div>
+        <!-- D -->
+        <div class="row">
+            <p class="row-letter">D</p>
+            <div id="row-seat" class="seat">1</div>
+            <div id="row-seat" class="seat">2</div>
+            <div id="row-seat" class="seat-occupied">3</div>
+            <div id="row-seat" class="seat-occupied">4</div>
+            <div id="row-seat" class="seat">5</div>
+            <div id="row-seat" class="seat">6</div>
+            <div id="row-seat" class="seat">7</div>
+            <div id="row-seat" class="seat">8</div>
+        </div>
+        <!-- E -->
+        <div class="row">
+            <p class="row-letter">E</p>
+            <div id="row-seat" class="seat">1</div>
+            <div id="row-seat" class="seat">2</div>
+            <div id="row-seat" class="seat-occupied">3</div>
+            <div id="row-seat" class="seat-occupied">4</div>
+            <div id="row-seat" class="seat-occupied">5</div>
+            <div id="row-seat" class="seat-occupied">6</div>
+            <div id="row-seat" class="seat">7</div>
+            <div id="row-seat" class="seat">8</div>
+        </div>
+        <!-- F -->
+        <div class="row">
+            <p id="priority-row">F</p>
+            <div id="row-seat" class="seat">1</div>
+            <div id="row-seat" class="seat-occupied">2</div>
+            <div id="row-seat" class="seat">3</div>
+            <div id="row-seat" class="seat">4</div>
+            <div id="row-seat" class="seat">5</div>
+            <div id="row-seat" class="seat">6</div>
+            <div id="row-seat" class="seat">7</div>
+            <div id="row-seat" class="seat-occupied">8</div>
+            <img class="priority-icon" src="./img/pSeat.jpg.png" alt="" srcset="">
+        </div>
+    </div>
+    <div id="text"></div>
+    <!-- FOOTER -->
+    <footer>
+        <div id="socialMedia">
+            <p id="footer-name">Daniel Aucar</p>
+            <a href="https://www.linkedin.com/in/daniel-aucar-felipe-2a922291/">
+                <img src="./img/linkedin-icon-2.svg.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-aucar-felipe-2a922291/" target="_blank">Linkedin</a>
+        </div>
+    </footer>
+    <!-- JS REF -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

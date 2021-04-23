@@ -1,0 +1,163 @@
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #19191b;
+}
+
+#choose-movie {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+#choose-movie #choose-text {
+  font-size: 16pt;
+  color: white;
+}
+
+#movie {
+  background-color: #ffff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 12pt;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#legend {
+  margin-top: 20px;
+  margin-right: 50px;
+  justify-content: space-between;
+}
+#legend li {
+  display: inline-block;
+  list-style: none;
+}
+#legend li .text-legend {
+  color: #777777;
+  margin-left: 5px;
+}
+
+.seat {
+  float: left;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  padding: auto;
+  border-radius: 2.5px;
+}
+
+.seat-selected {
+  float: left;
+  background-color: green;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  color: white;
+  border-radius: 2.5px;
+}
+
+.seat-occupied {
+  float: left;
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  color: white;
+  border-radius: 2.5px;
+}
+
+.preferred-seating {
+  float: left;
+  background-color: #1971b6;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  color: white;
+  border-radius: 2.5px;
+}
+
+.preferred-seating:hover {
+  background-color: green;
+  color: white;
+}
+
+#container {
+  margin: auto;
+  width: 15%;
+}
+#container .screen {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  transform: rotateX(-45deg);
+  box-shadow: 0px 3px 10px white;
+  padding-top: 20%;
+  font-size: 12pt;
+  color: gray;
+}
+#container .row {
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+#container .row #priority-row {
+  color: #229dfc;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+#container .row .priority-icon {
+  height: 20px;
+  margin-top: 4px;
+  margin-left: 5px;
+  padding-left: 10px;
+}
+#container .row .row-letter {
+  color: white;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+#container .row #row-seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+#container .row #row-seat:nth-of-type(7) {
+  margin-left: 18px;
+}
+#container .row #row-seat:hover {
+  cursor: pointer;
+}
+#container .row .seat:hover {
+  background-color: green;
+  color: white;
+}
+
+#text {
+  margin-top: 20px;
+  color: white;
+}
+
+#socialMedia {
+  display: flex;
+  padding: 3em;
+  align-items: center;
+  justify-content: center;
+  background-color: #19191b;
+  color: white;
+}
+
+#footer-name {
+  margin-top: 20px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#socialMedia a {
+  margin-left: 10px;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
