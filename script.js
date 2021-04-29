@@ -32,27 +32,6 @@ function setMovieData(movieIndex, moviePrice) {
     seatsNum = selectedSeatsCount;
     total = selectedSeatsCount * ticketPrice;
   }
-  
-  // Get data from localstorage and populate the UI
-  
-  function populateUI() {
-    const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
-  
-    if (selectedSeats !== null && selectedSeats.length > 0) {
-      seats.forEach((seat, index) => {
-        if (selectedSeats.indexOf(index) > -1) {
-          seat.classList.add('selected');
-        }
-      });
-    }
-  
-    const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
-  
-    if(selectedMovieIndex !== null) {
-      movieSelect.selectedIndex = selectedMovieIndex;
-    }
-  }
-
 //Add a event listener
 container.addEventListener('click', (seat) => {
     if (seat.target.classList.contains('seat') && !seat.target.classList.contains('seat-occupied')) {
